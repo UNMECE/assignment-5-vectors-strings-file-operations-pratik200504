@@ -1,5 +1,5 @@
 #ifndef PIXEL_H
-#define ITEM_H
+#define PIXEL_H
 
 struct _pixel
 {
