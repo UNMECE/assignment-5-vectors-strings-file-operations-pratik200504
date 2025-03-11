@@ -102,20 +102,19 @@ int main(int argc, char* argv[])
 	flip_vertically(pixel_list);
 
 	//write the flipped data to flipped.dat
-	ofstream outfile("Flipped.dat");
+	ofstream outfile("flipped.dat");
 	if(!outfile)
 	{
-		cerr<<"Error creating output file." <<end1;
+		cerr<<"Error creating output file." <<endl;
 		return 1;
 	}
 
 	for(const auto &p: pixel_list)
 	{
 		outfile <<p.x<< "," <<p.y <<"," <<p.r << "," <<p.g <<"," <<p.b <<endl;
-		}
-
-		cout <<"Flipped image saved to flipped.dat" <<endl;
-		outfile.close()
-
-		return 0;
+	}
+	outfile.close();
+	cout <<"Flipped image saved to flipped.dat" <<endl;
+		
+	return 0;
 }
