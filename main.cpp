@@ -74,7 +74,6 @@ int main(int argc, char* argv[])
 		cerr <<"Usage: "<<argv[0] <<"<filename>" <<endl;
 		return 1;
 	}
-}
 	
 	string filename=argv[1];
 	ifstream infile(filename);
